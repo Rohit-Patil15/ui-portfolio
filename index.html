@@ -8,41 +8,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
-    .d1{
-        justify-content:space-between;
-        margin-top:50px;
-    
-        margin-right:-550px;
-    }
+   header{
+    background-color: aquamarine;
+    padding:10px;
+   }
+   .c1{
+    color:red;
+   }
+   .c2{
+    color: blue;
+   }
+   .nav-link{
+    color: blue;
+   }
 </style>
 </head>
 <body class="container-fluid">
     <header>
         <div>
-            <div>
+        <div class="text1">
                 <h1>Rohit Patil</h1>
                 <h3>Computer Science & Engineering</h3>
             </div>
-            <div>
-                <img src="../public/images/a5.jpg">
-            </div>
-                 <div>
-                    <span class="bi bi-envelope"></span>
-                    <span>rohitpatil15121998@gmail.com</span>
+          
+                 <div class="card1">
+                    <span class="bi bi-envelope" d="flex"></span>
+                    <a href="rohitpatil15121998@gmail.com"><span>rohitpatil15121998@gmail.com</span></a>
                 </div>
            
-            <div>
+            <div class="card1">
                 <span class="bi bi-telephone-fill"></span>
-                <span>+918517809277</span>     
+                <a href="https://wa.me/918517809277"><span>+918517809277</span></a>     
             </div>
-            <div>
+            <div class="card1">
                 <span class="bi bi-geo-alt-fill"></span>
                 <span>Burhanpur,Madhya Pradesh,Bharat</span>
             </div>
-            <div>
+            <div class="card1">
                 <span class="bi bi-github"></span>
+              <a href="https://rohit-patil15.github.io/ui-portfolio/"><span>https://rohit-patil15.github.io/ui-portfolio/</span></a>
             </div>
         </div>
     </header>
+    <section>
+        <div>
+            <span class="h"><h5>My Project's</h5></span>
+            <ul>
+               <a class="nav-link" href="bhartiyalogin.html"><li>Login</li></a>
+                <a class="nav-link" href="bhartiyaculture.html"><li><span class="c1">भारतीय</span><span class="c2">culture</span></li></a>
+            </ul>
+        </div>
+    </section>
+    <footer></footer>
+   
 </body>
 </html>
