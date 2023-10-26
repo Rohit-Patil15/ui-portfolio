@@ -1,65 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-in">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI-Portfolio</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<style>
-   header{
-    background-color: aquamarine;
-    padding:10px;
-   }
-   .c1{
-    color:red;
-   }
-   .c2{
-    color: blue;
-   }
-   .nav-link{
-    color: blue;
-   }
-</style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin-left:250px;
+            margin-right:250px;
+            font-family:serif;
+            box-shadow:5px 5px 5px gray;
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+        
+        .header {
+            display:flex;
+            justify-content: space-between;
+            padding:15px;
+        }
+        .title-color,h6 {
+            color:rgb(42, 104, 197);
+            font-weight:bold;
+        }
+        .address-content {
+            font-size:15px;
+        }
+        .details {
+            display:grid;
+            grid-template-columns: 4fr 8fr;
+            box-shadow:5px 5px 5px gray;
+        } 
+        p,ul {
+            font-size:15px;
+            font-family:serif;
+        }
+        .education-head {
+            color:black;
+        }
+        .expertise {
+            background-color:lightgray;
+            padding:20px;
+        }
+        .tech-expertice-card {
+            background-color:white;
+            
+        }
+        .fluent-card {
+            background-color:white;
+        }
+        .bi-star-fill,.bi-star-half {
+            color:rgb(42, 104, 197);
+            margin-left:3px;
+        }
+    </style>
 </head>
-<body class="container-fluid">
-    <header>
-        <div>
-        <div class="text1">
-                <h1>Rohit Patil</h1>
-                <h3>Computer Science & Engineering</h3>
+<body class="border">
+    <div class="header">
+        <div class="p-3">
+            <p class="title-color" style="font-size:25px;">Rohit Patil</p>
+        </div>
+        <div class="address-content">
+            <p><span class="title-color fw-bold">Address :</span> Nimandad,Khaknar,Burhanpur,Madhya Pradesh</p>
+            <p style="text-align:right;"><span class="title-color fw-bold">Ph.No :</span ><a claas="nav-link" href="https://wa.me/8517809277"> 8517809277</a></p>
+            <div style="text-align:right">
+                <span class="title-color fw-bold">Gmail ID: <a class="fw-normal" href="rohitpatil15121998@gmail.com">rohitpatil15121998@gmail.com</a><br></span>
+                <span class="text-dark">Portfolio:<a class="fw-normal" href="https://rohit-patil15.github.io/ui-portfolio/">https://rohit-patil15.github.io/ui-portfolio/</a></span>
             </div>
-          
-                 <div class="card1">
-                    <span class="bi bi-envelope" d="flex"></span>
-                    <a href="rohitpatil15121998@gmail.com"><span>rohitpatil15121998@gmail.com</span></a>
+        </div>
+    </div>
+    <div class="details">
+        <div class="expertise border">
+            <h6 class="pt-2 pb-2">TECHNICAL EXPERTISE</h6>
+            <div class="tech-expertice-card pb-3">
+                <ol class="pt-2">
+               1. HTML
+                    <ul class="pt-3">
+                        <li>Semantics For Designing Layout</li>
+                        <li>Heading, Paragraph, Blockquote</li>
+                        <li>Text Effects & Numbering</li>
+                        <li>Lists</li>
+                        <li>Images</li>
+                        <li>Links</li>
+                        <li>Textbox</li>
+                        <li>Tables</li>
+                        <li>Forms</li>
+                    </ul>
+                </ol>
+                <ol class="pt-2">
+                   2. CSS
+                    <ul class="pt-3">
+                        <li>CSS Rules</li>
+                        <li>CSS Selectors</li>
+                        <li>CSS Units</li>
+                        <li>Box Model</li>
+                        <li>CSS Positions and Z-index</li>
+                        <li>CSS Display</li>
+                        <li>CSS Display Grid</li>
+                        <li>CSS Background</li>
+                        <li>CSS Text Effects</li>
+                        <li>CSS 2D</li>
+                        <li>CSS 3D</li>
+                        <li>CSS Keyframes and Animations</li>
+                    </ul>
+                </ol>
+                <ol class="pt-2">
+                   3. BOOTSTRAP
+                    <ul class="pt-3">
+                        <li>Responsive Design</li>
+                        <li>Bootstrap Classes</li>
+                        <li>Bootstrap Models</li>
+                        <li>Bootstrap Components</li>
+                    </ul>
+                </ol>
+            </div>
+            <h6 class="mt-5 mb-3">FLUENT LANGUAGES</h6>
+            <div class="fluent-card">
+                <p class="p-2">English, Hindi & Marathi</p>
+            </div>
+            <h6 class="mt-3 mb-3">PERSONAL INFORMATION</h6>
+            <div class="fluent-card">
+                <p class="p-2">Date Of Birth : 12-15-1998</p>
+            </div>
+            <h6 class="mt-3 mb-3">RATING</h6>
+            <div class="fluent-card" >
+                <p class="p-2">HTML,CSS, BOOTSTRAP :
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span></p>
+            </div>
+        </div>
+        <div class="about-me p-3">
+            <div>
+                <h6>ABOUT ME</h6>
+                <hr style="width:90px; color:blue;">
+                <p>I am Rohit Patil an aspiring Web UI Full Stack Learning fresher who is trying to seek
+                    a role to enhance and explore my technical knowledge in your company.</p>
+            </div>
+            <div>
+                <h6>CAREER OBJECTIVE</h6>
+                <hr style="width:170px; color:blue;">
+                <p>I want to be part of renewed organization & to contribue towards the growth of the organization based on my personal capabilities by learning from the new expouse within the structured frame of work.</p>
+            </div>
+            <div>
+                <h6>WORK EXPERIENCE <span>SHOPPING WEBSITE</span></h6>
+                <hr style="width:330px; color:blue;">
+                <ol type="1">
+                    <li style="color:rgb(42, 104, 197);">Bharatiya Culture</li>
+                    <ul>
+                        <li>Developed a responsive website for Shopping where user can see images and pattern of indian cultures,Delivery & Online Payments option follow us.</li>
+                        <li>Designed a page using HTML structure element & implemented responsiveness by using CSS media queries and styles, the icons using in Bootstrap.</li>
+                        <div style="color:rgb(71, 42, 165);font-size=19px;">
+                    </ul>
+                </ol>
+                
+                
+                <div class="ms-5">
+                    <span style="color:rgb(42, 104, 197); font-size:14px;">Technology Used :</span>
+                    <p class="ps-4">frontend : HTML, CSS, BOOTSTRAP</p>
+                    <span style="color:blue; font-size:14px;">My Projets :</span>
+              <a class="nav-link" href="bhartiyalogin.html"><li>Login</li></a>
+              <a class="nav-link" href="bhartiyaculture.html"><li>Bharatiya Culture</li></a>
+                </div>   
+            </div>
+            <div>
+                <h6  class="mt-3 mb-2">EDUCATION</h6>
+                <hr style="width:100px; color:blue;">
+                <h6 class="education-head">JUNIOR SECONDARY (10<sup>th</sup>)</h6>
+                <ul>
+                    <li><b>School Name :</b> Gurukul Academy Higher Secondary School</li>
+                    <li><b>Marks obtained :</b> 56%</li>
+                    <li>Khaknar,Burhanpur,Madhya Pradesh</li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="education-head">DIPLOMA (COMPUTER SCIENCE & ENGINEERING)</h6>
+                <ul>
+                    <li><b>College Name :</b> Thakur shivkumarsingh Memorial Group of Institutions</li>
+                    <li><b>Passing Year :</b> 2020</li>
+                    <li><b>Marks obtained :</b> CGPA-7.5</li>
+                    <li>Burhanpur,Dist-Burhanpur,Madhya Pradesh</li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="education-head">BACHELORS OF TECHNOLOGY(COMPUTER SCIENCE & ENGINEERING)</h6>
+                <ul>
+                    <li><b>College Name :</b> Shri Dadaji Institude of Technology & Science</li>
+                    <li><b>Passing Year :</b> 2023</li>
+                    <li><b>Marks obtained :</b> CGPA-8.02</li>
+                    <li>Khandwa,Dist-Khandwa,Madhya Pradesh</li>
+                </ul>
+            </div>
+            <div>
+                <h6>DECLERATION</h6>
+                <p>I hereby affirm that the information provided in this form is true & correct to the best of  my knowledge.</p>
+            </div>
+            <div class="d-flex justify-content-between mt-5" style="font-size:15px;">
+                <div>Date:</div>
+                <div>
+                    <span>Place:Ameerpet,Hydrabad</span><br>
+                    <span>Rohit Patil</span>
                 </div>
-           
-            <div class="card1">
-                <span class="bi bi-telephone-fill"></span>
-                <a href="https://wa.me/918517809277"><span>+918517809277</span></a>     
-            </div>
-            <div class="card1">
-                <span class="bi bi-geo-alt-fill"></span>
-                <span>Burhanpur,Madhya Pradesh,Bharat</span>
-            </div>
-            <div class="card1">
-                <span class="bi bi-github"></span>
-              <a href="https://rohit-patil15.github.io/ui-portfolio/"><span>https://rohit-patil15.github.io/ui-portfolio/</span></a>
             </div>
         </div>
-    </header>
-    <section>
-        <div>
-            <span class="h"><h5>My Project's</h5></span>
-            <ul>
-               <a class="nav-link" href="bhartiyalogin.html"><li>Login</li></a>
-                <a class="nav-link" href="bhartiyaculture.html"><li><span class="c1">भारतीय</span><span class="c2">culture</span></li></a>
-            </ul>
-        </div>
-    </section>
-    <footer></footer>
-   
+    </div>
 </body>
 </html>
