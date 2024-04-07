@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function RegisterClick() {
+
+            document.getElementById("detailsContainer").style.display = "block";
+            document.getElementById("buttonContainer").style.display = "none";
+
+            document.getElementById("lblName").innerHTML = document.getElementById("txtName").value;
+            document.getElementById("lblPrice").innerHTML = document.getElementById("txtPrice").value;
+            document.getElementById("lblCity").innerHTML = document.getElementById("lstCities").value;
+
+            stockCheckBox = document.getElementById("optStock");
+            stockStatus = "";
+
+            if (stockCheckBox.checked) {
+                stockStatus = "Available";
+            } else {
+                stockStatus = "Out of Stock";
+            }
+
+            document.getElementById("lblStock").innerHTML = stockStatus;
+
+        }
+        function EditClick() {
+            document.getElementById("lblTitle").innerHTML = "Edit Product";
+            document.getElementById("btnRegister").innerHTML = "Save";
+            document.getElementById("btnRegister").className = "btn btn-success";
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <div id="buttonContainer" class="mt-4">
+        <button class="btn btn-primary" data-bs-target="#register" data-bs-toggle="modal">Add Product</button>
+    </div>
+    <div class="modal fade" id="register">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="lblTitle">Add Product</h2>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><input type="text" id="txtName" class="form-control"></dd>
+                        <dt>Price</dt>
+                        <dd><input type="number" id="txtPrice" class="form-control"></dd>
+                        <dt>Shipped To</dt>
+                        <dd>
+                            <select class="form-select" id="lstCities">
+                                <option>Select City</option>
+                                <option>Delhi</option>
+                                <option>hyd</option>
+                            </select>
+                        </dd>
+                        <dt>Stock</dt>
+                        <dd class="form-switch">
+                            <input class="form-check-input" type="checkbox" id="optStock"> <label
+                                class="form-check-label">Available</label>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" onclick="RegisterClick()" id="btnRegister"
+                        class="btn btn-primary">Register</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="detailsContainer" style="display: none;">
+        <h2>Product Details</h2>
+        <dl>
+            <dt>Name</dt>
+            <dd id="lblName"></dd>
+            <dt>Price</dt>
+            <dd id="lblPrice"></dd>
+            <dt>City</dt>
+            <dd id="lblCity"></dd>
+            <dt>Stock</dt>
+            <dd id="lblStock"></dd>
+        </dl>
+        <button onclick="EditClick()" data-bs-target="#register" data-bs-toggle="modal"
+            class="btn btn-warning bi bi-pen-fill"> Edit </button>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
