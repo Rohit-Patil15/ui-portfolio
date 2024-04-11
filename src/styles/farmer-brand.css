@@ -188,7 +188,7 @@ marquee {
 
 /* Buttons Section */
 .info {
-    background-image: url(../public/images/naturalfrutesbanner.png);
+    background-image: url(../../public/images/naturalfrutesbanner.png);
     /*opacity: 0.8;*/
     background-size: cover;
     display: flex;
