@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA API CART</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link href="../public/images/n.png" rel="shortcut icon">
+
+    <script type="text/javascript">
+        function bodyload(){
+            fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY")
+            .then(function(res){
+                return res.json();
+            })
+            .then(function(mars){
+                mars.photos.map(function(item){
+                    var div = document.createElement("div");
+                    div.className = "card m-3 p-3";
+                    div.style.width = "250px";
+                    div.innerHTML = `
+                    <img src=${item.img_src} class="card-img-top" height="150">
+                    <div class="card-header" style="height:200px">
+                        <dl>
+                        <dt>Camera</dt>
+                        <dd class="bi bi-camera-fill"> ${item.camera.full_name}</dd>
+                        <dl>Rover</dl>
+                        <dt>${item.rover.name}</dt>
+                        </dl>
+                    </div>
+                    `;
+                    document.querySelector("main").appendChild(div);
+                })
+            })
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <h1 class="bg-dark text-white p-2">NASA MARS API Photos in Card's</h1>
+    <main class="d-flex flex-wrap">
+
+    </main> 
+</body>
+</html>
