@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-in">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Brand</title>
+    <link href="../public/images/n.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/styles/foods.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        body{background-color:#c5b4b4}header{background-image:url(../../public/images/foodsbanner.jpg);background-size:cover;height:100vh}@media screen and (orientation:landscape){.header-title{font-size:50px;font-weight:700;text-align:center;margin-top:80px}}@media screen and (orientation:portrait){.header-title{font-size:50px;font-weight:700;text-align:center;padding-top:100px}}.nav1{display:flex;align-items:center;justify-content:space-around;background:#000205;color:#766f6f;padding:15px}.add{display:flex;gap:30px}.add p{color:#76767c}marquee{color:#fff}.nav1 p i{color:#c5b4b4}.icons{display:flex;justify-content:space-around;align-items:center;gap:20px}@media (max-width:1200px){marquee{display:none}}@media (max-width:600px){.nav1{display:none}}.aside{background-image:url(../public/images/fruitsbanner3.jpg);background-size:cover;background-repeat:no-repeat;color:#000;font-size:30px;font-weight:700;padding:10px;opacity:.9px}.aside:hover{opacity:.7;color:red}section{margin-bottom:10px}@media screen and (min-width:1200px){.sec-nav1{display:grid;grid-template-columns:3fr 3fr 3fr 3fr}}@media screen and (max-width:600px){.sec-nav1{display:grid;grid-template-columns:12fr}}.card{background-color:#fff;height:450px;padding:5px;margin:30px 5px 10px 5px;font-family:Arial}.card-title{font-size:25px;font-weight:700;margin-left:10px}.card-header{padding:5px}.row{display:grid;grid-template-columns:6fr 6fr;grid-gap:5px;padding:0 5px 0 5px}.row img{width:100%;height:110px}p{margin-left:20px}.card-footer{color:blue;margin-left:10px}.card-footer:hover{color:red}.fruits-banner img{height:380px;margin-top:20px;width:100%}@media screen and (min-width:1200px){.main-img{display:flex;margin:20px;height:300px;width:100%px}}@media screen and (max-width:600px){.main-img{display:flex;margin:20px;height:300px;width:100%px}}@media screen and (orientation:landscape){#main-card{display:grid;grid-template-columns:3fr 3fr 3fr 3fr}}.main-card{background-color:#fff;height:420px;padding:5px;margin:10px 5px 30px 5px;font-family:Arial}.main-header{font-size:30px;font-weight:700}.main-body img{height:300px;width:100%}.main-footer{color:blue;margin-left:20px}@media screen and (orientation:portrait){#main-card{display:grid;grid-template-columns:12fr}}@media screen and (orientation:landscape){#main-card1{display:grid;grid-template-columns:3fr 3fr 3fr 3fr}}.main-card1{background-color:#fff;height:400px;padding:5px;margin:5px 5px 0 5px;font-family:Arial}.main-header{font-size:30px;font-weight:700}.main-body img{height:300px;width:100%}.main-footer{color:blue;margin-top:15px}.main-footer button{color:red;background-color:antiquewhite;width:100%}@media screen and (orientation:portrait){#main-card1{display:grid;grid-template-columns:12fr}}.back-top{padding:15px;background-color:#7d7d86;font-weight:700;margin-bottom:-10px;text-align:center}.back-top a{text-decoration:none;align-items:center;color:#fff}.footer{display:flex;align-items:flex-start;justify-content:space-evenly;flex-direction:row;background:#000103;color:#fff;gap:20px}.footer a{color:#fff;text-decoration:none}.footer hr{border:1px solid #7b827f;width:100%;height:.1px}.footer1{display:flex;align-items:flex-start;flex-direction:column;gap:10px;padding:60px 80px}.footer1:nth-child(1){gap:30px}.footer1 .footer-icons{display:flex;gap:20px;cursor:pointer}.footer-icons i{padding:10px;border-radius:50%;background:#26d48c}.footer1{width:100%}span{color:#26d48c}.footer1 h2{margin:10px 0}.footer1 p{display:flex;gap:10px;transition:transform 0.5s ease-in-out;cursor:pointer}.footer1 p:hover{transform:scaleX(1.1)}.footer1 p i{color:#26d48c;padding-top:3px}.footer1 h2{color:#9f9798}.end{width:100%}.copy-right{background:#000103;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:20px 50px}@media (max-width:1200px){.footer{align-items:center;justify-content:space-between;flex-direction:column;gap:0}.footer hr{width:30%}.footer1{align-items:flex-start;flex-direction:column;gap:10px;padding:30px 100px}}@media (max-width:900px){.copy-right{flex-direction:column;align-items:center;gap:10px}}
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- Nav Section 1  -->
+        <div class="nav1">
+            <div class="add">
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Nimandad Farm India
+                </p>
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    naturalfoods@gmail.com
+                </p>
+            </div>
+            <marquee width="50%">Note: We will provide fresh & chemical free foods........ </marquee>
+            <div class="icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+        </div>
+        <div class="header-title">
+            भारतीय Foods
+        </div>
+    </header>
+    <section>
+        <div class="aside">
+            Natural Foods
+        </div>
+        <nav class="sec-nav1">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 60% off | Natural Foods</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img title="All Fruits" src="../public/images/foods9.jpg">
+                            <p>Fruits</p>
+                        </div>
+                        <div>
+                            <img title="All Fruits" src="../public/images/foods10.jpg">
+                            <p>Fruits</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img title="All Fruits" src="../public/images/foods11.jpg">
+                            <p>Fruits</p>
+                        </div>
+                        <div>
+                            <img title="All Fruits" src="../public/images/foods12.jpg">
+                            <p>Fruits</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 20% off | Natural Foods</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods1.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods2.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods4.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods5.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 40% off | Natural Foods | Chemical Free</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods6.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods7.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods8.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods13.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 10% off | Natural Foods</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods14.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods15.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods16.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods17.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="fruits-banner">
+            <img src="../public/images/foods3.jpg">
+
+        </div>
+        <nav class="sec-nav1">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 60% off | Chemical Free</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img title="Banana" src="../public/images/foods1.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img title="Apple" src="../public/images/foods2.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img title="Strawberry" src="../public/images/foods4.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img title="Mango" src="../public/images/foods5.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 20% off | Natural Fruits</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods17.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods15.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods16.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods14.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 40% off | Natural Fruits</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods13.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods12.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods11.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods10.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 10% off | Natural Fruits</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods9.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods8.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/foods7.jpg">
+                            <p>Foods</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/foods6.jpg">
+                            <p>Foods</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="sec-nav1">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 60% off | Natural Fruits</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img title="Banana" src="../public/images/banana1.jpg">
+                            <p>Banana</p>
+                        </div>
+                        <div>
+                            <img title="Apple" src="../public/images/apple1.jpg">
+                            <p>Apple</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img title="Strawberry" src="../public/images/strawberry.jpg">
+                            <p>Strawberry</p>
+                        </div>
+                        <div>
+                            <img title="Mango" src="../public/images/mango1.jpg">
+                            <p>Mango</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 20% off | Natural Fruits</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/blueberry1.jpg">
+                            <p>Blueberry</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/dragonfruit.jpg">
+                            <p>Dragon Fruit</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/pear.jpg">
+                            <p>Pear</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/sugarcane.jpg">
+                            <p>Sugarcane</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 40% off | Natural Fruits</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/cherry.jpg">
+                            <p>Cherry</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/ber.jpg">
+                            <p>Ber</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/plum.jpg">
+                            <p>Plum</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/kiwi1.jpg">
+                            <p>Kiwi</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Up to 10% off | Natural Fruits</div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/orange2.jpg">
+                            <p>Orange</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/papaya.jpg">
+                            <p>Papaya</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <img src="../public/images/watermelon.jpg">
+                            <p>Watermelon</p>
+                        </div>
+                        <div>
+                            <img src="../public/images/pineapple.jpg">
+                            <p>Pineaaple</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        See all offers
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <marquee scrollamount="30">
+                <div class="main-img">
+                    <img src="../public/images/sweet corn.jpg">
+                    <img src="../public/images/tomato.jpg">
+                    <img src="../public/images/blackberries.jpg">
+                    <img src="../public/images/cherry.jpg">
+
+                </div>
+            </marquee>
+            <div id="main-card">
+                <div class="main-card">
+                    <div class="main-header">
+                        <div>Today Offer's 98% Off</div>
+                    </div>
+                    <div class="main-body">
+                        <img src="../public/images/foods1.jpg" title="All Foods">
+
+                    </div>
+                    <div class="main-footer">
+                        <button class="btn btn-outline-warning">Add to Card</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/foods2.jpg" title="All Foods">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/foods4.jpg" title="All Foods">
+                         
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/foods5.jpg" title="All Foods">
+                           
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-card1">
+                <div class="main-card">
+                    <div class="main-header">
+                        <div>Today Offer's 40% Off</div>
+                    </div>
+                    <div class="main-body">
+                        <img src="../public/images/foods6.jpg" title="All Foods">
+                       
+
+                    </div>
+                    <div class="main-footer">
+                        <button class="btn btn-outline-warning">Add to Card</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 20% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/foods7.jpg" title="All Foods">
+                            
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 82% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/foods9.jpg" title="All Foods">
+                           
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 20% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/foods14.jpg" title="All Foods">
+                          
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+        <div class="back-top">
+            <a href="#">Back Top</a>
+        </div>
+    </section>
+    <!-- Footer Section -->
+
+    <div class="footer">
+        <div class="footer1">
+            <h1>Natural<span>Foods</span></h1>
+            <p>
+                Fruits are seed-bearing structures. It develops from a ripe ovary. They are a rich source of vitamins,
+                minerals and fibres. Grapes, bananas, papaya, watermelon are some of the fruits consumed by humans. They
+                are the main source of a balanced diet.
+            </p>
+            <div class="footer-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+        </div>
+        <div class="footer1">
+            <h2>Short Link</h2>
+            <p><i class="bi bi-caret-right-fill"></i>About Us</p>
+            <p><i class="bi bi-caret-right-fill"></i>Contact Us</p>
+            <p><i class="bi bi-caret-right-fill"></i>Our Services</p>
+            <p><i class="bi bi-caret-right-fill"></i>Our Projects</p>
+            <p><i class="bi bi-caret-right-fill"></i>Latest Blog</p>
+        </div>
+        <div class="footer1">
+            <h2>Help Link</h2>
+            <p><i class="bi bi-caret-right-fill"></i>Terms of Use</p>
+            <p><i class="bi bi-caret-right-fill"></i>Privacy & Policy</p>
+            <p><i class="bi bi-caret-right-fill"></i>Helps</p>
+            <p><i class="bi bi-caret-right-fill"></i>FAQ's</p>
+            <p><i class="bi bi-caret-right-fill"></i>Contact</p>
+        </div>
+        <div class="footer1">
+            <h2>Contact Us</h2>
+            <p>
+                <i class="bi bi-geo-alt-fill"></i>
+                Nimandad Farm House
+            </p>
+            <hr />
+            <p>
+                <i class="bi bi-telephone-fill"></i>
+                <a href="//wa.me/8517809277">+91 8517809277</a>
+            </p>
+            <hr />
+            <p>
+                <i class="bi bi-envelope-fill"></i>
+                naturalfoods@gmail.com
+            </p>
+            <hr />
+        </div>
+    </div>
+    <hr class="end" />
+    <div class="copy-right">
+        <p><span>Farmer</span> Brand</p>
+        <p>
+            Designed <span>By Rohit Patil</span> Distributed By
+            <a href="#">Indian Farmer's</a>
+        </p>
+    </div>
+</body>
+
+</html>
