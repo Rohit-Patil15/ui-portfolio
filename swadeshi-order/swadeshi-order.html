@@ -15,6 +15,8 @@
         function PlaceOrderClick(){
             document.getElementById("lblName").innerHTML = document.getElementById("txtName").value;
             document.getElementById("lblMobile").innerHTML = document.getElementById("txtMobile").value;
+            document.getElementById("lblPin").innerHTML = document.getElementById("txtPin").value;
+            document.getElementById("lblLocation").innerHTML= document.getElementById("txtLocation").value;
 
             var mealName = "";
             var mealCost = 0;
@@ -65,16 +67,16 @@
 </head>
 <body class="container-fluid bg-danger text-white">
     <header>
-        <nav class="d-flex justify-content-between">
+        <nav class="d-flex justify-content-between p-2 bg-light">
            <div>
             <span class="bi bi-geo-alt me-2"></span>   
-            <span class="bi bi-telephone me-2"></span>
-            <span class="bi bi-twitter me-2"></span>
+            <span><a class="bi bi-telephone-fill" href="tel:+91851780927"></a></span>
             <span class="bi bi-translate me-2"></span>
+            <span><a class="bi bi-envelope-fill" href="mailto:rohitpatil15121998@gmail.com"></a></span>
            </div>
            <div>
-            <span class="bi bi-person"></span>
-            <span class="bi bi-info-circle me-2"></span>
+            <span><a href="./Register-login.html" class="bi bi-person"></a></span>
+            <span><a href="./help.html"class="bi bi-info-circle me-2"></a></span>
            </div>
         </nav>
         <img src="../public/images/Designer.png" width="100%" height="200">
@@ -90,9 +92,38 @@
                     <div class="accordion-body">
                         <dl>
                             <dt>Customer Name</dt>
-                            <dd><input type="text" id="txtName" class="form-control"></dd>
+                            <dd><input type="text" id="txtName" placeholder="Enter Name" class="form-control"></dd>
                             <dt>Mobile Number</dt>
-                            <dd><input type="text" id="txtMobile" class="form-control"></dd>
+                            <dd><input type="text" id="txtMobile" placeholder="Enter Number" class="form-control"></dd>
+                            <dt>Pin Code</dt>
+                            <dd><input type="number" id="txtPin" placeholder="Enter Pin-code" class="form-control"></dd>
+                            <dt>Location</dt>
+                            <dd>
+                                <select class="form-select" id="txtLocation">
+                                    <option>SELECT ADDRESS</option>
+                                    <option>NIMANDAD</option>
+                                    <option>KHAKNAR</option>
+                                    <option>BURHANPUR</option>
+                                    <option>KHANDWA</option>
+                                    <option>JALGAON</option>
+                                    <option>BHUSAWAL</option>
+                                    <option>PUNE</option>
+                                    <option>HYDERABAD</option>
+                                    <option>MUMBAI</option>
+                                    <option>HISAR</option>
+                                    <option>JODHPUR</option>
+                                    <option>JAYPUR</option>
+                                    <option>DELHI</option>
+                                    <option>BHOPAL</option>
+                                    <option>JABALPUR</option>
+                                    <option>SIRPUR</option>
+                                    <option>AYODHYA</option>
+                                    <option>KASHI</option>
+                                    <option>PATNA</option>
+                                    <option>AMEERPET</option>
+                                    <option>BALGUMPET</option>
+                                </select>
+                            </dd>
                         </dl>
                     </div>
                 </div>
@@ -163,6 +194,10 @@
                                     <dd id="lblName"></dd>
                                     <dt>Mobile</dt>
                                     <dd id="lblMobile"></dd>
+                                    <dt>Pin Code</dt>
+                                    <dd id="lblPin"></dd>
+                                    <dt>Location</dt>
+                                    <dd id="lblLocation"></dd>
                                     <dt>Meal</dt>
                                     <dd id="lblMeal"></dd>
                                     <dt>AdOn's</dt>
@@ -175,7 +210,7 @@
                                 <img id="imgMeal" width="100%">
         
                             </div>
-                            <button class="btn btn-outline-primary" >Confirm</button>
+                            <a href="./order-sucess.html"><button class="btn btn-outline-primary" >Confirm</button></a>
                         </div>
                     </div>
                 </div>
