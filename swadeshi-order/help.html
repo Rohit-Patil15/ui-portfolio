@@ -12,16 +12,24 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script> 
         <style>
-            div{
-               padding: 20px;
-               color:blue;
-            }
+            
+           
         </style>
+        <script>
+            function verifyText(){
+                var chars=document.querySelector("textarea").value;
+                var maxLimit=250;
+                var remain=maxLimit-parseInt(chars.length);
+                document.getElementById("msg").innerHTML=`${remain} char left`;
+            }
+        </script>
 </head>
-<body>
-<div>
-    <h5>May I Hepl You?</h5>
-    <input type="textarea" placeholder="minimun-20 word's maximun-250 word's" class="form-control"> 
-</div>
+<body class="d-flex justify-content-center pt-5">
+    <div class="w-25 p-3 border border-1 bg-body-secondary ">
+       <h3 class="bi bi-info-circle"> May I Hepl You?</h3> 
+        <span>Note: Max 250 Chars</span><br><br>
+        <textarea placeholder="Text..." onkeyup="verifyText()" maxlength="250"></textarea>
+        <p id="msg"></p>
+    </div>
 </body>
 </html>
