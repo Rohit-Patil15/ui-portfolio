@@ -11,6 +11,70 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>  
+        <style>
+            /* ----- FOOTER ----- */
+    footer {
+        background-color: black;
+        color: white;
+        font-family: arial;
+        padding: 20px;
+        margin-top: 5px;
+    }
+
+    .footer-main {
+        text-align: center;
+        margin: 100px;
+    }
+
+    .footer-main-title {
+        font-size: 30px;
+        margin: 30px;
+
+    }
+
+    .ft-input {
+        background-color: rgb(46, 44, 44);
+        height: 60px;
+        margin-right: 20px;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .footer-btn {
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+
+    .footer-row {
+        display: grid;
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        padding: 20px;
+        font-family: arial;
+
+    }
+
+    .footer-brand-name {
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .footer-title {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .footer-title~span {
+        display: block;
+        margin-bottom: 10px;
+    }
+    </style>
+     
         <script type="text/javascript">
         function PlaceOrderClick(){
             document.getElementById("lblName").innerHTML = document.getElementById("txtName").value;
@@ -65,7 +129,7 @@
         }
     </script>
 </head>
-<body class="container-fluid bg-danger text-white">
+<body class="container-fluid text-white">
     <header>
         <nav class="d-flex justify-content-between p-2 bg-light">
            <div>
@@ -450,6 +514,54 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-main-title">Want Food Ideas and Treats?</div>
+            <div>
+                <span><input class="ft-input" placeholder="Enter Email*" size="50" type="gmail"></span>
+                <span><button class="footer-btn">Submit</button></span>
+            </div>
+
+        </div>
+        <div class="footer-row">
+            <div>
+                <div class="footer-brand-name">स्वदेशी Foods</div>
+                <aside>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                </aside>
+            </div>
+            <div>
+                <div class="footer-title">SUPPORT</div>
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping & No-Returns</span>
+            </div>
+            <div>
+                <div class="footer-title">SHOP</div>
+                <span>North Indian Food</span>
+                <span>South Indian Food</span>
+                <span>Fresh Food</span>
+                <span>Discounts</span>
+            </div>
+            <div>
+                <div class="footer-title">COMPANY</div>
+                <span>Our Story</span>
+                <span>Careers</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>
+            </div>
+            <div>
+                <div class="footer-title">CONTACT</div>
+                <span>+91-8517809277</span>
+                <span>help@Swadeshifood.com</span>
+            </div>
+        </div>
+    </footer>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
