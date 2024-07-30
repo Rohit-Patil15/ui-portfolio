@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-in">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +11,112 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <link href="../public/images/fakestore.png" rel="shortcut icon">
-
-         <style>
-
+    <style>
         a {
             text-decoration: none;
-            color:black;
+            color: black;
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            font-family: arial;
+            padding: 20px;
+            margin-top: 70px;
+        }
+
+        .footer-main {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .footer-main-title {
+            font-size: 30px;
+            margin: 30px;
+
+        }
+
+        .ft-input {
+            background-color: rgb(46, 44, 44);
+            height: 40px;
+            margin-right: 20px;
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+        }
+
+        .footer-btn {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+        .footer-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .footer-row {
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            padding: 20px;
+            font-family: arial;
+
+        }
+
+        .footer-brand-name {
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .footer-title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-title~span {
+            display: block;
+            margin-bottom: 10px;
         }
     </style>
     <script type="text/javascript">
 
-        function LoadCategories(){
+        function LoadCategories() {
             fetch("https://fakestoreapi.com/products/categories")
-            .then(function(res){
-                return res.json();
-            })
-            .then(function(categories){
-                 categories.unshift("all");
-                 categories.map(function(category){
-                      var option = document.createElement("option");
-                      option.text = category.toUpperCase();
-                      option.value = category;
-                      document.getElementById("lstCategories").appendChild(option);
-                 })
-            })
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function (categories) {
+                    categories.unshift("all");
+                    categories.map(function (category) {
+                        var option = document.createElement("option");
+                        option.text = category.toUpperCase();
+                        option.value = category;
+                        document.getElementById("lstCategories").appendChild(option);
+                    })
+                })
         }
 
-        function LoadProducts(url){
+        function LoadProducts(url) {
             document.querySelector("main").innerHTML = "";
             fetch(url)
-            .then(function(res){
-                return res.json();
-            })
-            .then(function(products){
-                 products.map(function(product){
-                     var div = document.createElement("div");
-                     div.className = "card m-2 p-2";
-                     div.style.width = "200px";
-                     div.innerHTML = `
-                       <img src=${product.image} class="card-img-top" height="150">
-                       <div class="card-header" style="height:80px; overflow:auto">
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function (products) {
+                    products.map(function (product) {
+                        var div = document.createElement("div");
+                        div.className = "card p-2";
+                        div.style.width = "300px";
+                        div.innerHTML = `
+                       <img src=${product.image} class="card-img-top" height="280">
+                       <div class="card-header" style="height:90px; overflow:auto">
                           ${product.title}
                        </div>
                        <div class="card-body">
@@ -67,45 +133,44 @@
                          </button>
                        </div>
                      `;
-                     document.querySelector("main").appendChild(div);
-                 })
-            })
+                        document.querySelector("main").appendChild(div);
+                    })
+                })
         }
         var cartItems = [];
-        function GetCartItemsCount(){
+        function GetCartItemsCount() {
             document.getElementById("lblCount").innerHTML = cartItems.length;
         }
 
-        function bodyload(){
+        function bodyload() {
             LoadCategories();
             LoadProducts("https://fakestoreapi.com/products");
             GetCartItemsCount();
         }
 
-        function CategoryChanged()
-        {
+        function CategoryChanged() {
             var categoryName = document.getElementById("lstCategories").value;
-            if(categoryName=="all"){
+            if (categoryName == "all") {
                 LoadProducts("https://fakestoreapi.com/products");
             } else {
                 LoadProducts(`https://fakestoreapi.com/products/category/${categoryName}`);
             }
         }
 
-        function AddToCartClick(id){
+        function AddToCartClick(id) {
             fetch(`https://fakestoreapi.com/products/${id}`)
-            .then(function(res){
-                return res.json();
-            })
-            .then(function(product){
-                cartItems.push(product);
-                alert(`${product.title}\nAdded to Cart`);
-                GetCartItemsCount();
-            })
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function (product) {
+                    cartItems.push(product);
+                    alert(`${product.title}\nAdded to Cart`);
+                    GetCartItemsCount();
+                })
         }
-        function ShowCartClick(){
+        function ShowCartClick() {
             document.getElementById("cartBody").innerHTML = "";
-            cartItems.map(function(item){
+            cartItems.map(function (item) {
                 var tr = document.createElement("tr");
                 var tdTitle = document.createElement("td");
                 var tdPrice = document.createElement("td");
@@ -124,18 +189,25 @@
         }
     </script>
 </head>
+
 <body class="container-fluid" onload="bodyload()">
     <header class="d-flex justify-content-between p-3 bg-info-subtle text-dark">
         <div class="h3">Fakestore</div>
         <nav class="fs-4">
             <a href="javascript:LoadProducts('https://fakestoreapi.com/products')" class="me-3"><span>Home</span></a>
-            <a href="javascript:LoadProducts('https://fakestoreapi.com/products/category/electronics')" class="me-3"><span>Electronics</span></a>
-            <a href="javascript:LoadProducts('https://fakestoreapi.com/products/category/jewelery')" class="me-3"><span>Jewelery</span></a>
-            <a href="javascript:LoadProducts('https://fakestoreapi.com/products/category/mens')" class="me-3"><span>Men's Fashion</span></a>
-            <a href="javascript:LoadProducts('https://fakestoreapi.com/products/category/electronics')" class="me-3"><span>Women's Fashion</span></a>
+            <a href="javascript:LoadProducts('https://fakestoreapi.com/products/category/electronics')"
+                class="me-3"><span>Electronics</span></a>
+            <a href="javascript:LoadProducts('https://fakestoreapi.com/products/category/jewelery')"
+                class="me-3"><span>Jewelery</span></a>
+            <a href="javascript:LoadProducts('https://fakestoreapi.com/products/category/mens')"
+                class="me-3"><span>Men's Fashion</span></a>
+            <a href="javascript:LoadProducts('https://fakestoreapi.com/products/category/electronics')"
+                class="me-3"><span>Women's Fashion</span></a>
         </nav>
         <div class="fs-4">
-            <button data-bs-target="#cart" data-bs-toggle="modal" onclick="ShowCartClick()" class="btn position-relative btn-warning bi bi-cart2"> Your Cart <span id="lblCount" class="badge rounded rounded-circle bg-danger text-white position-absolute"></span> </button>
+            <button data-bs-target="#cart" data-bs-toggle="modal" onclick="ShowCartClick()"
+                class="btn position-relative btn-warning bi bi-cart2"> Your Cart <span id="lblCount"
+                    class="badge rounded rounded-circle bg-danger text-white position-absolute"></span> </button>
             <div class="modal fade" id="cart">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -153,8 +225,15 @@
                                     </tr>
                                 </thead>
                                 <tbody id="cartBody">
-                                   
+
                                 </tbody>
+                                <tfooter>
+                                   
+                                        <td><button class="btn btn-primary">Confirm Order</button></td>
+                                        <td><button class="btn btn-warning">Add More</button></td>
+                                        <td><button class="btn btn-danger">Cancel Order</button></td>
+                                  
+                                </tfooter>
                             </table>
                         </div>
                     </div>
@@ -176,12 +255,60 @@
                 </div>
             </div>
         </nav>
-        <main class="col-10 d-flex flex-wrap"  style="height: 450px; overflow: auto;">
+        <main class="col-10 d-flex flex-wrap">
 
         </main>
     </section>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-main-title">Want style Ideas and Treats?</div>
+            <div>
+                <span><input class="ft-input" placeholder="Enter Email*" size="50" type="gmail"></span>
+                <span><button class="footer-btn">Submit</button></span>
+            </div>
 
+        </div>
+        <div class="footer-row">
+            <div>
+                <div class="footer-brand-name">Fakestore</div>
+                <aside>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                </aside>
+            </div>
+            <div>
+                <div class="footer-title">SUPPORT</div>
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping & Returns</span>
+            </div>
+            <div>
+                <div class="footer-title">SHOP</div>
+                <span>Groom Shopping</span>
+                <span>Bright Shopping</span>
+                <span>Couples Shopping</span>
+                <span>Discounts</span>
+            </div>
+            <div>
+                <div class="footer-title">COMPANY</div>
+                <span>Our Story</span>
+                <span>Careers</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>
+            </div>
+            <div>
+                <div class="footer-title">CONTACT</div>
+                <span>+91-8517809277</span>
+                <span>help@fakestore.com</span>
+            </div>
+        </div>
+    </footer>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
