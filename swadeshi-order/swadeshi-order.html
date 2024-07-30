@@ -73,6 +73,332 @@
         display: block;
         margin-bottom: 10px;
     }
+    /* About Us Section */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 100px;
+    color: black;
+}
+
+.img1 img {
+    border-radius: 10px;
+    margin-right: 40px;
+    width: 500px;
+    height: auto;
+}
+
+.about-cont2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+
+}
+
+.about-cont2 p:nth-child(1) {
+    color:rgb(9, 9, 10);
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.about-cont2 h1 {
+    font-size: 45px;
+    text-align: start;
+}
+
+.about-cont2 p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-cont2 .btn {
+    padding: 15px 40px;
+    font-size: 25px;
+    font-weight: 600px;
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px ;
+    background: #d4c7e9;
+    border: none;
+}
+
+/* AboutUs Media Queries */
+
+@media (max-width: 1200px) {
+    .about {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+        margin: 80px 30px;
+    }
+
+    .img1 img {
+        margin: 0;
+        text-align: center;
+    }
+
+    .about-cont2 h1 {
+        font-size: 35px;
+        text-align: start;
+    }
+
+    .about-cont2 {
+        gap: 30px;
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+        margin: 30px;
+    }
+
+    .img1 img {
+        margin: 0;
+        width: 90%;
+        height: auto;
+        text-align: start;
+    }
+
+    .about-cont2 h1 {
+        font-size: 25px;
+        text-align: start;
+    }
+
+    .about-cont2 {
+        gap: 30px;
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+        margin: 30px 30px;
+    }
+
+    .img1 img {
+        margin: 0;
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .about-cont2 h1 {
+        font-size: 25px;
+        text-align: start;
+    }
+
+    .about-cont2 {
+        gap: 30px;
+        padding: 0 30px;
+    }
+}
+/* Projects Section */
+
+.projects {
+    margin: 100px;
+}
+
+.projects p,
+h1 {
+    text-align: center;
+}
+
+.projects p {
+    color: #1842b6;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.projects h1 {
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+}
+
+.project-cards {
+    z-index: 1;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.card-img img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-img::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 40%;
+    border-bottom-left-radius: 15px;
+    box-sizing: border-box;
+    border-bottom: 10px solid #1842b6;
+    border-left: 5px solid #1842b6;
+    transition: all 1s;
+}
+
+.card-img::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 40%;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+    border-top: 5px solid #1842b6;
+    border-right: 10px solid #1842b6;
+    transition: all 1s;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #ff770000;
+    backdrop-filter: blur(0.1px);
+    border-radius: 15px;
+}
+
+.card-img:hover .card-body {
+    right: 0%;
+}
+
+.card-body-cont {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background:black;
+    border-radius: 15px;
+    padding: 1px;
+}
+
+.card-body-cont h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.card-body-cont p {
+    padding: 10px0 0 30px 0;
+    color: #e9fd06;
+}
+
+/* Projects Media Queries */
+
+@media (max-width: 1200px) {
+    .projects {
+        margin: 150px 100px;
+    }
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .project-cards {
+        z-index: 1;
+        /* flex-wrap: wrap; */
+        margin: 0;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    .projects h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 900px) {
+    .projects {
+        margin: 150px 250px;
+    }
+
+    .projects h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .projects {
+        margin: 150px 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .projects {
+        margin: 150px 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        margin: 150px 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects {
+        margin: 150px 30px;
+    }
+
+    .projects h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
     </style>
      
         <script type="text/javascript">
@@ -513,6 +839,92 @@
                 </div>
             </div>
         </div>
+         <!-- About Us Section -->
+            <div class="about">
+                <div class="img1">
+                    <img src="../public/images/dosa1.jpg" alt="" />
+                </div>
+                <div class="about-cont2">
+                    <p>About Us</p>
+                    <h1>Health Benefits of Organic</h1>
+                    <p>
+                        Organic products reduce public health risks to farm workers, their families, and consumers by minimizing
+                        their exposure to toxic and persistent chemicals on the farm and in food, the soil in which they work
+                        and play, the air they breathe, and the water they drink. Children are especially vulnerable to
+                        pesticides. Thus, offering organic food and fiber products into the marketplace gives parents the option
+                        of choosing products produced without the use of these toxins.
+                    </p>
+                    <p>
+                        Not only does organic production help reduce public health risks, mounting evidence shows that food
+                        grown organically are rich in nutrients, such as Vitamin C, iron, magnesium, and phosphorus, with less
+                        exposure to nitrates and pesticide residues in organically grown fruits, vegetables, and grains when
+                        compared to conventionally grown products.
+                    </p>
+                    <button class="btn"><a href="more-detailsorganicfoods.html">More Details</a></button>
+                </div>
+            </div>
+             <!-- Projects Section -->
+        
+             <div class="projects">
+                <p>It's tastes better</p>
+                <h1>It is healthier for you and more nutrient dense</h1>
+                <div class="project-cards">
+                    <div class="card-img">
+                        <img src="../public/images/Indori-Poha.jpg" alt="" />
+                        <div class="card-body">
+                            <div class="card-body-cont">
+                                <h1>Chemical-free</h1>
+                                <p>Poha (Indori)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="../public/images/vadapav.jpg" alt="" />
+                        <div class="card-body">
+                            <div class="card-body-cont">
+                                <h1>Chemical-free</h1>
+                                <p>Vada Pav (Mumbai)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="../public/images/imarti-jalebi.jpg" alt="" />
+                        <div class="card-body">
+                            <div class="card-body-cont">
+                                <h1>Chemical-free</h1>
+                                <p>Imarti or Jalebi<br />(Jaunpur)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="../public/images/kachori1.jpg" alt="" />
+                        <div class="card-body">
+                            <div class="card-body-cont">
+                                <h1>Chemical-free</h1>
+                                <p>kachori<br/>(Burhanpur)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="../public/images/upma.jpg" alt="" />
+                        <div class="card-body">
+                            <div class="card-body-cont">
+                                <h1>Chemical-free</h1>
+                                <p>Upma<br />(Hyderabad)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="../public/images/sabudana-wada.jpg" alt="" />
+                        <div class="card-body">
+                            <div class="card-body-cont">
+                                <h1>Chemical-free</h1>
+                                <p>Sabudana Wada<br />(Burhanpur)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <footer>
         <div class="footer-main">
@@ -542,7 +954,7 @@
                 <span>Shipping & No-Returns</span>
             </div>
             <div>
-                <div class="footer-title">SHOP</div>
+                <div class="footer-title">Orders</div>
                 <span>North Indian Food</span>
                 <span>South Indian Food</span>
                 <span>Fresh Food</span>
