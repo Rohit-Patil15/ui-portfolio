@@ -12,8 +12,24 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script> 
         <style>
-            
-           
+             header{
+                background-color: aquamarine;
+                height: 100px;
+            }
+            h2{
+                margin-top: 30px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            div{
+                border-radius: 10px;
+            }
+           span{
+            color: red;
+           }
+           textarea{
+                width: 100%;
+                height: 50%;
+            }
         </style>
         <script>
             function verifyText(){
@@ -22,14 +38,21 @@
                 var remain=maxLimit-parseInt(chars.length);
                 document.getElementById("msg").innerHTML=`${remain} char left`;
             }
+           
         </script>
 </head>
-<body class="d-flex justify-content-center pt-5">
-    <div class="w-25 p-3 border border-1 bg-body-secondary ">
+<body>
+    <header>
+        <marquee><h2>Indian Tranding Website </h2></marquee>
+    </header>
+    <main class="d-flex justify-content-center pt-5">
+    <div class="w-50 p-4 bg-body-secondary">
        <h3 class="bi bi-info-circle"> May I Hepl You?</h3> 
         <span>Note: Max 250 Chars</span><br><br>
         <textarea placeholder="Text..." onkeyup="verifyText()" maxlength="250"></textarea>
         <p id="msg"></p>
+        <button class="btn btn-primary">Send</button>
     </div>
+</main>
 </body>
 </html>
