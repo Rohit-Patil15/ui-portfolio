@@ -13,290 +13,357 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <style>
+    <style>
+        body {
+            background-color: #c5b4b4
+        }
 
+        header {
+            background-image: url(../public/images/dry-fruits-banner.jpg);
+            background-size: cover;
+            height: 100vh;
+            color: #000205
+        }
 
-            body{background-color:#c5b4b4}header{background-image:url(../public/images/dry-fruits-banner.jpg);background-size:cover;height:100vh;color:#000205}@media screen and (orientation:landscape){.header-title{font-size:100px;font-weight:700;text-align:center;margin-top:310px;margin-right:300px;background-color:#ababb0;font-family:arial;border-top-right-radius:100px;border-bottom-right-radius:100px;color:#fff;text-shadow:3px 10px 10px #000}}@media screen and (orientation:portrait){.header-title{font-size:50px;font-weight:700;text-align:center;background-color:#ababb0}}.nav1{display:flex;align-items:center;justify-content:space-around;background:#000205;color:#766f6f;padding:15px}.add{display:flex;gap:30px}.add p{color:#76767c}marquee{color:#fff}.nav1 p i{color:#c5b4b4}.icons{display:flex;justify-content:space-around;align-items:center;gap:20px}@media (max-width:1200px){marquee{display:none}}@media (max-width:600px){.nav1{display:none}}.aside{background-image:url(../public/images/fruitsbanner3.jpg);background-size:cover;background-repeat:no-repeat;color:#000;font-size:30px;font-weight:700;padding:10px;opacity:.9px}.aside:hover{opacity:.7;color:red}section{margin-bottom:10px}.fruits-banner img{height:380px;margin-top:20px;width:100%}@media screen and (min-width:1200px){.main-img{display:flex;margin:20px;height:300px;width:100%px}}@media screen and (max-width:600px){.main-img{display:flex;margin:20px;height:300px;width:100%px}}@media screen and (orientation:landscape){#main-card{display:grid;grid-template-columns:3fr 3fr 3fr 3fr}}.main-card{background-color:#fff;height:420px;padding:5px;margin:10px 5px 30px 5px;font-family:Arial}.main-header{font-size:30px;font-weight:700}.main-body img{height:300px;width:100%}.main-footer{color:blue;margin-left:20px}@media screen and (orientation:portrait){#main-card{display:grid;grid-template-columns:12fr}}@media screen and (orientation:landscape){#main-card1{display:grid;grid-template-columns:3fr 3fr 3fr 3fr}}.main-card1{background-color:#fff;height:400px;padding:5px;margin:5px 5px 0 5px;font-family:Arial}.main-header{font-size:30px;font-weight:700}.main-body img{height:300px;width:100%}.main-footer{margin-top:10px}.main-footer button{color:red;background-color:antiquewhite;width:100%}@media screen and (orientation:portrait){#main-card1{display:grid;grid-template-columns:12fr}}.footer{display:flex;align-items:flex-start;justify-content:space-evenly;flex-direction:row;background:#000103;color:#fff;gap:20px}.footer a{color:#fff;text-decoration:none}.footer hr{border:1px solid #7b827f;width:100%;height:.1px}.footer1{display:flex;align-items:flex-start;flex-direction:column;gap:10px;padding:60px 80px}.footer1:nth-child(1){gap:30px}.footer1 .footer-icons{display:flex;gap:20px;cursor:pointer}.footer-icons i{padding:10px;border-radius:50%;background:#26d48c}.footer1{width:100%}span{color:#26d48c}.footer1 h2{margin:10px 0}.footer1 p{display:flex;gap:10px;transition:transform 0.5s ease-in-out;cursor:pointer}.footer1 p:hover{transform:scaleX(1.1)}.footer1 p i{color:#26d48c;padding-top:3px}.footer1 h2{color:#9f9798}.end{width:100%}.copy-right{background:#000103;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:20px 50px}@media (max-width:1200px){.footer{align-items:center;justify-content:space-between;flex-direction:column;gap:0}.footer hr{width:30%}.footer1{align-items:flex-start;flex-direction:column;gap:10px;padding:30px 100px}}@media (max-width:900px){.copy-right{flex-direction:column;align-items:center;gap:10px}}
+        @media screen and (orientation:landscape) {
+            .header-title {
+                font-size: 100px;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 310px;
+                margin-right: 300px;
+                background-color: #ababb0;
+                font-family: arial;
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px;
+                color: #fff;
+                text-shadow: 3px 10px 10px #000
+            }
+        }
 
-            body {
-    background-color:#c5b4b4
-}
-header {
-    background-image:url(../public/images/dry-fruits-banner.jpg);
-    background-size:cover;
-    height:100vh;
-    color:#000205
-}
-@media screen and (orientation:landscape) {
-    .header-title {
-        font-size:100px;
-        font-weight:700;
-        text-align:center;
-        margin-top:310px;
-        margin-right:300px;
-        background-color:#ababb0;
-        font-family:arial;
-        border-top-right-radius:100px;
-        border-bottom-right-radius:100px;
-        color:#fff;
-        text-shadow:3px 10px 10px #000
-    }
-}
-@media screen and (orientation:portrait) {
-    .header-title {
-        font-size:50px;
-        font-weight:700;
-        text-align:center;
-        background-color:#ababb0
-    }
-}
-.nav1 {
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-    background:#000205;
-    color:#766f6f;
-    padding:15px
-}
-.add {
-    display:flex;
-    gap:30px
-}
-.add p {
-    color:#76767c
-}
-marquee {
-    color:#fff
-}
-.nav1 p i {
-    color:#c5b4b4
-}
-.icons {
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    gap:20px
-}
-@media (max-width:1200px) {
-    marquee {
-        display:none
-    }
-}
-@media (max-width:600px) {
-    .nav1 {
-        display:none
-    }
-}
-.aside {
-    background-image:url(../public/images/fruitsbanner3.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    color:#000;
-    font-size:30px;
-    font-weight:700;
-    padding:10px;
-    opacity:.9px
-}
-.aside:hover {
-    opacity:.7;
-    color:red
-}
-section {
-    margin-bottom:10px
-}
-.fruits-banner img {
-    height:380px;
-    margin-top:20px;
-    width:100%
-}
-@media screen and (min-width:1200px) {
-    .main-img {
-        display:flex;
-        margin:20px;
-        height:300px;
-        width:100%px
-    }
-}
-@media screen and (max-width:600px) {
-    .main-img {
-        display:flex;
-        margin:20px;
-        height:300px;
-        width:100%px
-    }
-}
-@media screen and (orientation:landscape) {
-    #main-card {
-        display:grid;
-        grid-template-columns:3fr 3fr 3fr 3fr
-    }
-}
-.main-card {
-    background-color:#fff;
-    height:420px;
-    padding:5px;
-    margin:10px 5px 30px 5px;
-    font-family:Arial
-}
-.main-header {
-    font-size:30px;
-    font-weight:700
-}
-.main-body img {
-    height:300px;
-    width:100%
-}
-.main-footer {
-    color:blue;
-    margin-left:20px
-}
-@media screen and (orientation:portrait) {
-    #main-card {
-        display:grid;
-        grid-template-columns:12fr
-    }
-}
-@media screen and (orientation:landscape) {
-    #main-card1 {
-        display:grid;
-        grid-template-columns:3fr 3fr 3fr 3fr
-    }
-}
-.main-card1 {
-    background-color:#fff;
-    height:400px;
-    padding:5px;
-    margin:5px 5px 0 5px;
-    font-family:Arial
-}
-.main-header {
-    font-size:30px;
-    font-weight:700
-}
-.main-body img {
-    height:300px;
-    width:100%
-}
-.main-footer {
-    margin-top:10px
-}
-.main-footer button {
-    color:red;
-    background-color:antiquewhite;
-    width:100%
-}
-@media screen and (orientation:portrait) {
-    #main-card1 {
-        display:grid;
-        grid-template-columns:12fr
-    }
-}
-.footer {
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-evenly;
-    flex-direction:row;
-    background:#000103;
-    color:#fff;
-    gap:20px
-}
-.footer a {
-    color:#fff;
-    text-decoration:none
-}
-.footer hr {
-    border:1px solid #7b827f;
-    width:100%;
-    height:.1px
-}
-.footer1 {
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column;
-    gap:10px;
-    padding:60px 80px
-}
-.footer1:nth-child(1) {
-    gap:30px
-}
-.footer1 .footer-icons {
-    display:flex;
-    gap:20px;
-    cursor:pointer
-}
-.footer-icons i {
-    padding:10px;
-    border-radius:50%;
-    background:#26d48c
-}
-.footer1 {
-    width:100%
-}
-span {
-    color:#26d48c
-}
-.footer1 h2 {
-    margin:10px 0
-}
-.footer1 p {
-    display:flex;
-    gap:10px;
-    transition:transform 0.5s ease-in-out;
-    cursor:pointer
-}
-.footer1 p:hover {
-    transform:scaleX(1.1)
-}
-.footer1 p i {
-    color:#26d48c;
-    padding-top:3px
-}
-.footer1 h2 {
-    color:#9f9798
-}
-.end {
-    width:100%
-}
-.copy-right {
-    background:#000103;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:20px 50px
-}
-@media (max-width:1200px) {
-    .footer {
-        align-items:center;
-        justify-content:space-between;
-        flex-direction:column;
-        gap:0
-    }
-    .footer hr {
-        width:30%
-    }
-    .footer1 {
-        align-items:flex-start;
-        flex-direction:column;
-        gap:10px;
-        padding:30px 100px
-    }
-}
-@media (max-width:900px) {
-    .copy-right {
-        flex-direction:column;
-        align-items:center;
-        gap:10px
-    }
-}
-            
-        </style>
+        @media screen and (orientation:portrait) {
+            .header-title {
+                font-size: 50px;
+                font-weight: 700;
+                text-align: center;
+                background-color: #ababb0
+            }
+        }
+
+        .nav1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: #000205;
+            color: #766f6f;
+            padding: 15px
+        }
+
+        .add {
+            display: flex;
+            gap: 30px
+        }
+
+        .add p {
+            color: #76767c
+        }
+
+        marquee {
+            color: #fff
+        }
+
+        .nav1 p i {
+            color: #c5b4b4
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px
+        }
+
+        @media (max-width:1200px) {
+            marquee {
+                display: none
+            }
+        }
+
+        @media (max-width:600px) {
+            .nav1 {
+                display: none
+            }
+        }
+
+        .aside {
+            background-image: url(../public/images/fruitsbanner3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #000;
+            font-size: 30px;
+            font-weight: 700;
+            padding: 10px;
+            opacity: .9px
+        }
+
+        .aside:hover {
+            opacity: .7;
+            color: red
+        }
+
+        section {
+            margin-bottom: 10px
+        }
+
+        .fruits-banner img {
+            height: 380px;
+            margin-top: 20px;
+            width: 100%
+        }
+
+        @media screen and (min-width:1200px) {
+            .main-img {
+                display: flex;
+                margin: 20px;
+                height: 300px;
+                width: 100%px
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .main-img {
+                display: flex;
+                margin: 20px;
+                height: 300px;
+                width: 100%px
+            }
+        }
+
+        @media screen and (orientation:landscape) {
+            #main-card {
+                display: grid;
+                grid-template-columns: 3fr 3fr 3fr 3fr
+            }
+        }
+
+        .main-card {
+            background-color: #fff;
+            height: 420px;
+            padding: 5px;
+            margin: 10px 5px 30px 5px;
+            font-family: Arial
+        }
+
+        .main-header {
+            font-size: 30px;
+            font-weight: 700
+        }
+
+        .main-body img {
+            height: 300px;
+            width: 100%
+        }
+
+        .main-footer {
+            color: blue;
+            margin-left: 20px
+        }
+
+        @media screen and (orientation:portrait) {
+            #main-card {
+                display: grid;
+                grid-template-columns: 12fr
+            }
+        }
+
+        @media screen and (orientation:landscape) {
+            #main-card1 {
+                display: grid;
+                grid-template-columns: 3fr 3fr 3fr 3fr
+            }
+        }
+
+        .main-card1 {
+            background-color: #fff;
+            height: 400px;
+            padding: 5px;
+            margin: 5px 5px 0 5px;
+            font-family: Arial
+        }
+
+        .main-header {
+            font-size: 30px;
+            font-weight: 700
+        }
+
+        .main-body img {
+            height: 300px;
+            width: 100%
+        }
+
+        .main-footer {
+            margin-top: 10px
+        }
+
+        .main-footer button {
+            color: red;
+            background-color: antiquewhite;
+            width: 100%
+        }
+
+        @media screen and (orientation:portrait) {
+            #main-card1 {
+                display: grid;
+                grid-template-columns: 12fr
+            }
+        }
+
+        .back-top {
+            padding: 15px;
+            background-color: #7d7d86;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: -10px;
+        }
+
+        .back-top a {
+            text-decoration: none;
+            align-items: center;
+            color: #fff;
+        }
+
+        /* Footer Section */
+
+        .footer {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-direction: row;
+            background: #000103;
+            color: white;
+            gap: 20px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer hr {
+            border: 1px solid #7b827f;
+            width: 100%;
+            height: 0.1px;
+        }
+
+        .footer1 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+            padding: 60px 50px;
+        }
+
+        .footer1:nth-child(1) {
+            gap: 30px;
+        }
+
+        .footer1 .footer-icons {
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+        }
+
+        .footer-icons i {
+            /* border: 1px solid red; */
+            padding: 10px;
+            border-radius: 50%;
+            background: #26d48c;
+
+        }
+
+        .footer1 {
+            width: 100%;
+        }
+
+        span {
+            color: #26d48c;
+        }
+
+        .footer1 h2 {
+            margin: 10px 0;
+        }
+
+        .footer1 p {
+            display: flex;
+            gap: 10px;
+            transition: transform 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .footer1 p:hover {
+            transform: scaleX(1.1);
+        }
+
+        .footer1 p i {
+            color: #26d48c;
+            padding-top: 3px;
+
+        }
+
+        .footer1 h2 {
+            color: #9f9798;
+        }
+
+        .end {
+            width: 100%;
+        }
+
+        .copy-right {
+            background: #000103;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+        }
+
+        /* Footer Media Screen Section */
+
+        @media (max-width:1200px) {
+            .footer {
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .footer hr {
+                width: 30%;
+            }
+
+            .footer1 {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 10px;
+                padding: 30px 100px;
+            }
+
+        }
+
+        @media (max-width:900px) {
+            .copy-right {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
     <header>
-      
+
         <!-- Nav Section 1  -->
         <div class="nav1">
             <div class="add">
@@ -319,7 +386,7 @@ span {
         </div>
         <div class="header-title">
             Dry Fruits
-            
+
         </div>
     </header>
     <section>
@@ -333,8 +400,8 @@ span {
                         <div>Today Offer's 98% Off</div>
                     </div>
                     <div class="main-body">
-                        <img src="../public/images/kaju.jpg"title="Cashews">
-                        
+                        <img src="../public/images/kaju.jpg" title="Cashews">
+
                     </div>
                     <div class="main-footer">
                         <button class="btn btn-outline-warning">Add to Card</button>
@@ -348,7 +415,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/badam.jpg" title="Almonds">
-                            
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -362,7 +429,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/pista.jpg" title="Pistachio">
-                          
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -375,8 +442,8 @@ span {
                             <div>Today Offer's 98% Off</div>
                         </div>
                         <div class="main-body">
-                            <img src="../public/images/kismis.jpg"title=Kismis>
-                            
+                            <img src="../public/images/kismis.jpg" title=Kismis>
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -391,7 +458,7 @@ span {
                     </div>
                     <div class="main-body">
                         <img src="../public/images/walnuts.jpg" title="Walnuts">
-                 
+
 
                     </div>
                     <div class="main-footer">
@@ -406,7 +473,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/dates.jpg" title="">
-                          
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -420,7 +487,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/Organic-Dried-Apricots.jpg">
-                            
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -434,7 +501,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/raisins.jpg">
-                           
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -457,7 +524,7 @@ span {
                     </div>
                     <div class="main-body">
                         <img src="../public/images/macadamia.jpg" title="Macadamia">
-                        
+
                     </div>
                     <div class="main-footer">
                         <button class="btn btn-outline-warning">Add to Card</button>
@@ -471,7 +538,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/peanuts.jpg" title="Peanuts">
-                            
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -485,7 +552,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/pumpkinseeds.jpg" title="Pumpkin Seeds">
-                          
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -499,7 +566,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/brazilnuts.jpg" title="Brazil Nuts">
-                            
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -514,7 +581,7 @@ span {
                     </div>
                     <div class="main-body">
                         <img src="../public/images/sunflower-seeds.jpg" title="Sunflower Seeds">
-                 
+
 
                     </div>
                     <div class="main-footer">
@@ -529,7 +596,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/hazelnuts.jpg" title="Hazelnuts">
-                          
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -543,7 +610,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/black-walnuts.jpg" title="Black Walnuts">
-                            
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -557,7 +624,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/pinenuts.jpg" title="Pine Nuts">
-                           
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>

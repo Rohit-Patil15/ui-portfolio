@@ -17,23 +17,23 @@
         <h2 class="text-center">Registration Form</h2>
         <form id="registrationForm" onsubmit="return collectData(event)">
             <div class="form-group">
-                <label for="firstName">First Name</label>
+                <label for="firstName">First Name</label>&nbsp;<span>*</span>
                 <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
             </div>
             <div class="form-group">
-                <label for="lastName">Last Name</label>
+                <label for="lastName">Last Name</label>&nbsp;<span>*</span>
                 <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
             </div>
             <div class="form-group">
-                <label for="email">Email address</label>
+                <label for="email">Email Address</label>&nbsp;<span>*</span>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" required>
             </div>
             <div class="form-group">
-                <label for="phone">Mobile Number</label>
+                <label for="phone">Mobile Number</label>&nbsp;<span>*</span>
                 <input type="tel" class="form-control" id="phone" placeholder="Enter no. +91" required>
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">Password</label>&nbsp;<span>*</span>
                 <input type="password" class="form-control" id="password" placeholder="Enter password must have a combination of uppercase letters, lowercase letters, numbers, and symbols" onkeyup="VerifyPassword()" required>
                 <p id="pwdError"></p>
             </div>
