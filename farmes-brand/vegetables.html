@@ -8,141 +8,413 @@
     <title>Farmers Brand</title>
     <link href="../public/images/n.png" rel="shortcut icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <style>
-            body{background-color:#c5b4b4}header{background-image:url(../public/images/vegetablebanner.jpg);background-size:cover;height:100vh;color:#000205}@media screen and (orientation:landscape){.header-title{font-size:100px;font-weight:700;text-align:center;margin-top:310px;margin-right:300px}}@media screen and (orientation:portrait){.header-title{font-size:50px;font-weight:700;text-align:center;padding-top:100px}}.nav1{display:flex;align-items:center;justify-content:space-around;background:#000205;color:#766f6f;padding:15px}.add{display:flex;gap:30px}.add p{color:#76767c}marquee{color:#fff}.nav1 p i{color:#c5b4b4}.icons{display:flex;justify-content:space-around;align-items:center;gap:20px}@media (max-width:1200px){marquee{display:none}}@media (max-width:600px){.nav1{display:none}}.aside{background-image:url(../public/images/fruitsbanner3.jpg);background-size:cover;background-repeat:no-repeat;color:#000;font-size:30px;font-weight:700;padding:10px;opacity:.9px}.aside:hover{opacity:.7;color:red}section{margin-bottom:10px}@media screen and (min-width:1200px){.sec-nav1{display:grid;grid-template-columns:3fr 3fr 3fr 3fr}}@media screen and (max-width:600px){.sec-nav1{display:grid;grid-template-columns:12fr}}.card{background-color:#fff;height:450px;padding:5px;margin:30px 5px 10px 5px;font-family:Arial}.card-title{font-size:25px;font-weight:700;margin-left:10px}.card-header{padding:5px}.row{display:grid;grid-template-columns:6fr 6fr;grid-gap:5px;padding:0 5px 0 5px}.row img{width:100%;height:110px}p{margin-left:20px}.card-footer{color:blue;margin-left:10px}.card-footer:hover{color:red}.fruits-banner img{height:380px;margin-top:20px;width:100%}@media screen and (min-width:1200px){.main-img{display:flex;margin:20px;height:300px;width:100%px}}@media screen and (max-width:600px){.main-img{display:flex;margin:20px;height:300px;width:100%px}}@media screen and (orientation:landscape){#main-card{display:grid;grid-template-columns:3fr 3fr 3fr 3fr}}.main-card{background-color:#fff;height:420px;padding:5px;margin:10px 5px 30px 5px;font-family:Arial}.main-header{font-size:30px;font-weight:700}.main-body img{height:300px;width:100%}.main-footer{color:blue;margin-left:20px}@media screen and (orientation:portrait){#main-card{display:grid;grid-template-columns:12fr}}@media screen and (orientation:landscape){#main-card1{display:grid;grid-template-columns:3fr 3fr 3fr 3fr}}.main-card1{background-color:#fff;height:400px;padding:5px;margin:5px 5px 0 5px;font-family:Arial}.main-header{font-size:30px;font-weight:700}.main-body img{height:300px;width:100%}.main-footer{margin-top:10px}.main-footer button{color:red;background-color:antiquewhite;width:100%}@media screen and (orientation:portrait){#main-card1{display:grid;grid-template-columns:12fr}}.back-top{padding:15px;background-color:#7d7d86;font-weight:700;text-align:center;margin-bottom:-10px}.back-top a{text-decoration:none;align-items:center;color:#fff}.footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background: #000103;
-    color: white;
-    gap: 20px;
-}
-.footer a{
-    color: white;
-    text-decoration: none;
-}
-.footer hr {
-    border: 1px solid #7b827f;
-    width: 100%;
-    height: 0.1px;
-}
+    <style>
+        body {
+            background-color: #c5b4b4
+        }
 
-.footer1 {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-    padding: 60px 50px;
-}
+        header {
+            background-image: url(../public/images/vegetablebanner.jpg);
+            background-size: cover;
+            height: 100vh;
+            color: #000205
+        }
 
-.footer1:nth-child(1) {
-    gap: 30px;
-}
+        @media screen and (orientation:landscape) {
+            .header-title {
+                font-size: 100px;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 310px;
+                margin-right: 300px
+            }
+        }
 
-.footer1 .footer-icons {
-    display: flex;
-    gap: 20px;
-    cursor: pointer;
-}
+        @media screen and (orientation:portrait) {
+            .header-title {
+                font-size: 50px;
+                font-weight: 700;
+                text-align: center;
+                padding-top: 100px
+            }
+        }
 
-.footer-icons i {
-    /* border: 1px solid red; */
-    padding: 10px;
-    border-radius: 50%;
-    background: #26d48c;
-    
-}
+        .nav1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: #000205;
+            color: #766f6f;
+            padding: 15px
+        }
 
-.footer1 {
-    width: 100%;
-}
+        .add {
+            display: flex;
+            gap: 30px
+        }
 
-span {
-    color: #26d48c;
-}
+        .add p {
+            color: #76767c;
+        }
 
-.footer1 h2 {
-    margin: 10px 0;
-}
+        marquee {
+            color: #fff;
+        }
 
-.footer1 p {
-    display: flex;
-    gap: 10px;
-    transition: transform 0.5s ease-in-out;
-    cursor: pointer;
-}
+        .nav1 p i {
+            color: #c5b4b4;
+        }
 
-.footer1 p:hover {
-    transform: scaleX(1.1);
-}
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
 
-.footer1 p i {
-    color: #26d48c;
-    padding-top: 3px;
-    
-}
+        @media (max-width:1200px) {
+            marquee {
+                display: none;
+            }
+        }
 
-.footer1 h2 {
-    color: #9f9798;
-}
+        @media (max-width:600px) {
+            .nav1 {
+                display: none;
+            }
+        }
 
-.end {
-    width: 100%;
-}
+        .aside {
+            background-image: url(../public/images/fruitsbanner3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #000;
+            font-size: 30px;
+            font-weight: 700;
+            padding: 10px;
+            opacity: 0.9px;
+        }
 
-.copy-right {
-    background: #000103;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 50px;
-}
+        .aside:hover {
+            opacity: 0.7;
+            color: red
+        }
 
-/* Footer Media Screen Section */
+        section {
+            margin-bottom: 10px
+        }
 
-@media (max-width:1200px) {
-    .footer {
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 0;
-    }
+        @media screen and (min-width:1200px) {
+            .sec-nav1 {
+                display: grid;
+                grid-template-columns: 3fr 3fr 3fr 3fr
+            }
+        }
 
-    .footer hr {
-        width: 30%;
-    }
+        @media screen and (max-width:600px) {
+            .sec-nav1 {
+                display: grid;
+                grid-template-columns: 12fr
+            }
+        }
 
-    .footer1 {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
-        padding: 30px 100px;
-    }
+        .card {
+            background-color: #fff;
+            height: 450px;
+            padding: 5px;
+            margin: 30px 5px 10px 5px;
+            font-family: Arial
+        }
 
-}
+        .card-title {
+            font-size: 25px;
+            font-weight: 700;
+            margin-left: 10px
+        }
 
-@media (max-width:900px) {
-    .copy-right {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-}
+        .card-header {
+            padding: 5px
+        }
 
-        </style>
+        .row {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap: 5px;
+            padding: 0 5px 0 5px
+        }
+
+        .row img {
+            width: 100%;
+            height: 110px
+        }
+
+        card p {
+            margin-left: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-footer {
+            color: blue;
+            margin-left: 10px
+        }
+
+        .card-footer:hover {
+            color: red
+        }
+
+        .fruits-banner img {
+            height: 380px;
+            margin-top: 20px;
+            width: 100%
+        }
+
+        @media screen and (min-width:1200px) {
+            .main-img {
+                display: flex;
+                margin: 20px;
+                height: 300px;
+                width: 100%px
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .main-img {
+                display: flex;
+                margin: 20px;
+                height: 300px;
+                width: 100%px
+            }
+        }
+
+        @media screen and (orientation:landscape) {
+            #main-card {
+                display: grid;
+                grid-template-columns: 3fr 3fr 3fr 3fr
+            }
+        }
+
+        .main-card {
+            background-color: #fff;
+            height: 420px;
+            padding: 5px;
+            margin: 10px 5px 30px 5px;
+            font-family: Arial
+        }
+
+        .main-header {
+            font-size: 30px;
+            font-weight: 700
+        }
+
+        .main-body img {
+            height: 300px;
+            width: 100%
+        }
+
+        .main-footer {
+            color: blue;
+            margin-left: 20px
+        }
+
+        @media screen and (orientation:portrait) {
+            #main-card {
+                display: grid;
+                grid-template-columns: 12fr
+            }
+        }
+
+        @media screen and (orientation:landscape) {
+            #main-card1 {
+                display: grid;
+                grid-template-columns: 3fr 3fr 3fr 3fr
+            }
+        }
+
+        .main-card1 {
+            background-color: #fff;
+            height: 400px;
+            padding: 5px;
+            margin: 5px 5px 0 5px;
+            font-family: Arial
+        }
+
+        .main-header {
+            font-size: 30px;
+            font-weight: 700
+        }
+
+        .main-body img {
+            height: 300px;
+            width: 100%
+        }
+
+        .main-footer {
+            margin-top: 10px
+        }
+
+        .main-footer button {
+            color: red;
+            background-color: antiquewhite;
+            width: 100%
+        }
+
+        @media screen and (orientation:portrait) {
+            #main-card1 {
+                display: grid;
+                grid-template-columns: 12fr
+            }
+        }
+
+        .back-top {
+            padding: 15px;
+            background-color: #7d7d86;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: -10px
+        }
+
+        .back-top a {
+            text-decoration: none;
+            align-items: center;
+            color: #fff
+        }
+
+        .footer {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-direction: row;
+            background: #000103;
+            color: white;
+            gap: 20px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer hr {
+            border: 1px solid #7b827f;
+            width: 100%;
+            height: 0.1px;
+        }
+
+        .footer1 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+            padding: 60px 50px;
+        }
+
+        .footer1:nth-child(1) {
+            gap: 30px;
+        }
+
+        .footer1 .footer-icons {
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+        }
+
+        .footer-icons i {
+            /* border: 1px solid red; */
+            padding: 10px;
+            border-radius: 50%;
+            background: #26d48c;
+
+        }
+
+        .footer1 {
+            width: 100%;
+        }
+
+        span {
+            color: #26d48c;
+        }
+
+        .footer1 h2 {
+            margin: 10px 0;
+        }
+
+        .footer1 p {
+            display: flex;
+            gap: 10px;
+            transition: transform 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .footer1 p:hover {
+            transform: scaleX(1.1);
+        }
+
+        .footer1 p i {
+            color: #26d48c;
+            padding-top: 3px;
+
+        }
+
+        .footer1 h2 {
+            color: #9f9798;
+        }
+
+        .end {
+            width: 100%;
+        }
+
+        .copy-right {
+            background: #000103;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+        }
+
+        /* Footer Media Screen Section */
+
+        @media (max-width:1200px) {
+            .footer {
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .footer hr {
+                width: 30%;
+            }
+
+            .footer1 {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 10px;
+                padding: 30px 100px;
+            }
+
+        }
+
+        @media (max-width:900px) {
+            .copy-right {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-      
+
         <!-- Nav Section 1  -->
         <div class="nav1">
             <div class="add">
@@ -165,7 +437,7 @@ span {
         </div>
         <div class="header-title">
             भारतीय सब्जिया
-            
+
         </div>
     </header>
     <section>
@@ -211,21 +483,21 @@ span {
                     <div class="row">
                         <div>
                             <img src="../public/images/drumstick.jpg">
-                            <p>Drumsticks</p>
+                            <p>Drumstick's</p>
                         </div>
                         <div>
                             <img src="../public/images/Flat-Green-Beans.jpg">
-                            <p>Green beans</p>
+                            <p>Green Beans</p>
                         </div>
                     </div>
                     <div class="row">
                         <div>
                             <img src="../public/images/brinjal-bharta.jpg">
-                            <p>Brinjal bharta</p>
+                            <p>Brinjal Bharta's</p>
                         </div>
                         <div>
                             <img src="../public/images/green-Capsicum.jpg">
-                            <p>GreenCapsicum</p>
+                            <p>Green Capsicum</p>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -241,7 +513,7 @@ span {
                     <div class="row">
                         <div>
                             <img src="../public/images/cluster-beans.jpg">
-                            <p>Cluster beans</p>
+                            <p>Cluster Beans</p>
                         </div>
                         <div>
                             <img src="../public/images/dhaniya.jpg">
@@ -255,7 +527,7 @@ span {
                         </div>
                         <div>
                             <img src="../public/images/carrots.jpg">
-                            <p>Carrots</p>
+                            <p>Carrot's</p>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -298,249 +570,249 @@ span {
         <div class="fruits-banner">
             <img src="../public/images/vegetables1.jpg">
         </div>
-        
-       <nav>
-        <div id="main-card">
-            <div class="main-card">
-                <div class="main-header">
-                    <div>Today Offer's 98% Off</div>
-                </div>
-                <div class="main-body">
-                    <img src="../public/images/potato2.jpg" title="Potato">
-                    
-                </div>
-                <div class="main-footer">
-                    <button class="btn btn-outline-warning">Add to Card</button>
-                </div>
-            </div>
 
-            <div>
+        <nav>
+            <div id="main-card">
                 <div class="main-card">
                     <div class="main-header">
                         <div>Today Offer's 98% Off</div>
                     </div>
                     <div class="main-body">
-                        <img src="../public/images/green-Chilli.jpg" title="Green Chilli">
-                        
+                        <img src="../public/images/potato2.jpg" title="Potato">
+
                     </div>
                     <div class="main-footer">
                         <button class="btn btn-outline-warning">Add to Card</button>
                     </div>
                 </div>
+
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/green-Chilli.jpg" title="Green Chilli">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/brinjal-bharta.jpg" title="Brinjal Bharta">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/dhaniya.jpg" title="Dhaniya">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div id="main-card1">
+                <div class="main-card">
+                    <div class="main-header">
+                        <div>Today Offer's 40% Off</div>
+                    </div>
+                    <div class="main-body">
+                        <img src="../public/images/peas.jpg" title="Pears">
+
+
+                    </div>
+                    <div class="main-footer">
+                        <button class="btn btn-outline-warning">Add to Card</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 20% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/lauki.jpg" title="Lauki">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 82% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/sweet corn.jpg" title="Sweet Corn">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 20% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/tomato.jpg" title="Tomatoes">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <nav>
+            <div id="main-card">
                 <div class="main-card">
                     <div class="main-header">
                         <div>Today Offer's 98% Off</div>
                     </div>
                     <div class="main-body">
-                        <img src="../public/images/brinjal-bharta.jpg" title="Brinjal Bharta">
-                      
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 98% Off</div>
-                    </div>
-                    <div class="main-body">
-                        <img src="../public/images/dhaniya.jpg" title="Dhaniya">
-                        
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="main-card1">
-            <div class="main-card">
-                <div class="main-header">
-                    <div>Today Offer's 40% Off</div>
-                </div>
-                <div class="main-body">
-                    <img src="../public/images/peas.jpg" title="Pears">
-             
+                        <img src="../public/images/carrots.jpg" title="Carrots">
 
+                    </div>
+                    <div class="main-footer">
+                        <button class="btn btn-outline-warning">Add to Card</button>
+                    </div>
                 </div>
-                <div class="main-footer">
-                    <button class="btn btn-outline-warning">Add to Card</button>
-                </div>
-            </div>
 
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 20% Off</div>
-                    </div>
-                    <div class="main-body">
-                        <img src="../public/images/lauki.jpg" title="Lauki">
-                      
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 82% Off</div>
-                    </div>
-                    <div class="main-body">
-                        <img src="../public/images/sweet corn.jpg" title="Sweet Corn">
-                        
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 20% Off</div>
-                    </div>
-                    <div class="main-body">
-                        <img src="../public/images/tomato.jpg" title="Tomatoes">
-                       
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-       </nav>
-       <nav>
-        <div id="main-card">
-            <div class="main-card">
-                <div class="main-header">
-                    <div>Today Offer's 98% Off</div>
-                </div>
-                <div class="main-body">
-                    <img src="../public/images/carrots.jpg" title="Carrots">
-                    
-                </div>
-                <div class="main-footer">
-                    <button class="btn btn-outline-warning">Add to Card</button>
-                </div>
-            </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/methi.jpg" title="Methi">
 
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 98% Off</div>
-                    </div>
-                    <div class="main-body">
-                        <img src="../public/images/methi.jpg" title="Methi">
-                        
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 98% Off</div>
-                    </div>
-                    <div class="main-body">
-                        <img src="../public/images/brinjal-purple.jpg" title="Brinjal Purple">
-                      
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 98% Off</div>
-                    </div>
-                    <div class="main-body">
-                        <img src="../public/images/drumstick.jpg" title="Dramsticks">
-                        
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="main-card1">
-            <div class="main-card">
-                <div class="main-header">
-                    <div>Today Offer's 40% Off</div>
-                </div>
-                <div class="main-body">
-                    <img src="../public/images/cluster-beans.jpg" title="Cluster Beans">
-             
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/brinjal-purple.jpg" title="Brinjal Purple">
 
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="main-footer">
-                    <button class="btn btn-outline-warning">Add to Card</button>
-                </div>
-            </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 98% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/drumstick.jpg" title="Dramsticks">
 
-            <div>
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-card1">
                 <div class="main-card">
                     <div class="main-header">
-                        <div>Today Offer's 20% Off</div>
+                        <div>Today Offer's 40% Off</div>
                     </div>
                     <div class="main-body">
-                        <img src="../public/images/green-Capsicum.jpg" title="Green Capsicum">
-                      
+                        <img src="../public/images/cluster-beans.jpg" title="Cluster Beans">
+
+
                     </div>
                     <div class="main-footer">
                         <button class="btn btn-outline-warning">Add to Card</button>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 82% Off</div>
+
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 20% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/green-Capsicum.jpg" title="Green Capsicum">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
                     </div>
-                    <div class="main-body">
-                        <img src="../public/images/cauliflower.jpg" title="Cauliflower">
-                        
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 82% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/cauliflower.jpg" title="Cauliflower">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
                     </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
+                </div>
+                <div>
+                    <div class="main-card">
+                        <div class="main-header">
+                            <div>Today Offer's 20% Off</div>
+                        </div>
+                        <div class="main-body">
+                            <img src="../public/images/growcabbage.jpg" title="Grow Cabbage">
+
+                        </div>
+                        <div class="main-footer">
+                            <button class="btn btn-outline-warning">Add to Card</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="main-card">
-                    <div class="main-header">
-                        <div>Today Offer's 20% Off</div>
-                    </div>
-                    <div class="main-body">
-                        <img src="../public/images/growcabbage.jpg" title="Grow Cabbage">
-                       
-                    </div>
-                    <div class="main-footer">
-                        <button class="btn btn-outline-warning">Add to Card</button>
-                    </div>
-                </div>
             </div>
-        </div>
-        </div>
-       </nav>
+        </nav>
         <main>
             <marquee>
                 <div class="main-img">
                     <img src="../public/images/vegetables1.jpg">
-                    
-                   
+
+
                 </div>
             </marquee>
             <div id="main-card">
@@ -550,7 +822,7 @@ span {
                     </div>
                     <div class="main-body">
                         <img src="../public/images/onion.jpg" title="Onion">
-                        
+
                     </div>
                     <div class="main-footer">
                         <button class="btn btn-outline-warning">Add to Card</button>
@@ -564,7 +836,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/spoge-gourd.jpg" title="Spoge Gourd">
-                            
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -578,7 +850,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/tamatoes.jpg" title="Tamatoes">
-                          
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -592,7 +864,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/bitter-gourd.jpg" title="Bitter Gourd">
-                            
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -607,7 +879,7 @@ span {
                     </div>
                     <div class="main-body">
                         <img src="../public/images/cacumber.jpg" title="Cucumber">
-                 
+
 
                     </div>
                     <div class="main-footer">
@@ -622,7 +894,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/potato1.jpg" title="Potato">
-                          
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -636,7 +908,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/french-bean1.jpg" title="French Beans">
-                            
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
@@ -650,7 +922,7 @@ span {
                         </div>
                         <div class="main-body">
                             <img src="../public/images/garlic.jpg" title="Garlic">
-                           
+
                         </div>
                         <div class="main-footer">
                             <button class="btn btn-outline-warning">Add to Card</button>
