@@ -114,14 +114,13 @@ marquee {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    font-size: 10px;
 
 }
 
+
 .call-cont {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .call-cont p:nth-child(1) {
@@ -131,10 +130,10 @@ marquee {
 .call-cont p:nth-child(2) {
     color: rgb(0, 3, 5);
 }
-
 .searchbar {
     display: flex;
     align-items: center;
+ 
 }
 
 .burger {
@@ -191,7 +190,7 @@ marquee {
 /* Buttons Section */
 .info {
     background-image: url(../../public/images/naturalfrutesbanner.png);
-    /*opacity: 0.8;*/
+   /* opacity: 0.8;*/
     background-size: cover;
     display: flex;
     align-items: center;
@@ -310,6 +309,10 @@ marquee {
     margin-right: 40px;
     width: 500px;
     height: auto;
+ 
+}
+.img1 img:hover{
+    opacity: 0.9;
 }
 
 .about-cont2 {
