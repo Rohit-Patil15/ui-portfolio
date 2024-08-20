@@ -29,12 +29,52 @@
         h3:hover{
             color:lightcoral;
         }
+        @keyframes animate {
+            0% {
+                opacity: 5;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .spinner {
+            text-align: center;
+
+        }
+
+        .spinner span {
+            position: absolute;
+            background: red;
+            width: 5px;
+            height: 12px;
+            transform: rotate(calc(var(--spinner)*(360deg/12))) translateY(15px);
+            animation: animate 3s;
+            animation-delay: calc(var(--spinner) *0.2s);
+            opacity: 0;
+            margin-top: -50px;
+        }
     </style>
 </head>
 <body>
 <div>
     <h3>Your Order Confirm Successfully...</h3>
 </div>   
+<div class="spinner">
+    <span style="--spinner:1;"></span>
+    <span style="--spinner:2;"></span>
+    <span style="--spinner:3;"></span>
+    <span style="--spinner:4;"></span>
+    <span style="--spinner:5;"></span>
+    <span style="--spinner:6;"></span>
+    <span style="--spinner:7;"></span>
+    <span style="--spinner:8;"></span>
+    <span style="--spinner:9;"></span>
+    <span style="--spinner:10;"></span>
+    <span style="--spinner:11;"></span>
+    <span style="--spinner:12;"></span>
+</div>
 <div>
     <a href="./swadeshi-order.html"><button class="btn btn-primary">Back Home</button></a>
 </div>
