@@ -88,7 +88,7 @@ document.getElementById("lblTotal").innerHTML=lblTotal.toLocaleString(`en-in`,{s
     <div class="tab-pane" id="AdvAmnt">
       <div class="mt-4 p-4">
         <div class="d-flex">
-          <span class="pe-4">Advance Amount</span><input type="text" class="form-control w-25 " id="txtAmnt" placeholder="Enter Ammount...">
+          <span class="pe-4">Advance Amount</span><input type="text" class="form-control w-25" id="txtAmnt" placeholder="Enter Ammount..." required>
         </div>
         <button onclick="RegisterClick()" data-bs-target="#bill" data-bs-toggle="modal"
           class="btn btn-primary">Register</button>
@@ -119,8 +119,12 @@ document.getElementById("lblTotal").innerHTML=lblTotal.toLocaleString(`en-in`,{s
                       <dd id="lblAmount"></dd>
                       <dt>Total</dt>
                       <dd id="lblTotal"></dd>
-                      <a href="payment.html"><button class="btn btn-outline-primary">Pay Amount</button></a>
+                      
                     </dl>
+                   <div class="btnSele">
+                    <a href="payment.html"><button class="btn btn-outline-primary">Pay Amount</button></a>
+                    <a href=""><button class="btn btn-outline-danger">Cancel</button></a>
+                   </div>
                   </div>
                   <div class="col">
                     <img id="Imgroom" width="100%">
